@@ -106,13 +106,17 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
                 setMessage("¿Estás seguro que deseas eliminar este equipo?").
                 setPositiveButton("Aceptar",this).
                 setNegativeButton("Cancelar",this).create();
+        alert.show();
     }
 
     @Override
     public void onClick(DialogInterface dialog, int which) {
 
         if(which== DialogInterface.BUTTON_POSITIVE)
-        {}
+        {
+            dataEquipo.remove(pos);
+            adapter.notifyDataSetChanged();
+        }
 
     }
 }
