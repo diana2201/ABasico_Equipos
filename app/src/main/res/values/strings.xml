@@ -8,4 +8,13 @@
     <string name="action_more">Mas</string>
     <string name="action_info">Informacion</string>
     <string name="action_about">Acerca de</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Eliminar</string>
+
+    <string-array name="Equipos">
+        <item>Real Madrid</item>
+        <item>Atlético de Madrid</item>
+        <item>Celta</item>
+        <item>Barcelona</item>
+    </string-array>
 </resources>
