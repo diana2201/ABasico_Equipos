@@ -1,6 +1,7 @@
 package com.moviles.salt.equipos;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,9 +21,15 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
 
     ListView list;
     String[] data;
-    List<String> dataEquipo;
+    public static List<String> dataEquipo;
     ArrayAdapter<String> adapter;
     int pos;
+
+    @Override
+    protected void onRestart() {
+        adapter.notifyDataSetChanged();
+        super.onRestart();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         switch (item.getItemId())
         {
             case R.id.action_add:
-                Toast.makeText(this,"Seleccionaste agregar",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this,AgregarActivity.class);
+                startActivity(intent);
                 break;
             case R.id.action_info:
                 Toast.makeText(this,"Seleccionaste Información",

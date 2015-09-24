@@ -17,4 +17,5 @@
         <item>Celta</item>
         <item>Barcelona</item>
     </string-array>
+    <string name="title_activity_agregar">AgregarActivity</string>
 </resources>
