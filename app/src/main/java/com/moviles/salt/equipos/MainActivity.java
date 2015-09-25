@@ -96,8 +96,9 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         switch (item.getItemId())
         {
             case R.id.action_edit:
-                Toast.makeText(this,
-                        "Seleccionaste editar",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this,EditarActivity.class);
+                intent.putExtra("position",pos);
+                startActivity(intent);
                 break;
             case R.id.action_delete:
                 showAlertDelete();

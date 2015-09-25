@@ -18,4 +18,5 @@
         <item>Barcelona</item>
     </string-array>
     <string name="title_activity_agregar">AgregarActivity</string>
+    <string name="title_activity_editar">EditarActivity</string>
 </resources>

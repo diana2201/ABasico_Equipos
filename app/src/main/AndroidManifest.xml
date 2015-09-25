@@ -20,6 +20,10 @@
             android:name=".AgregarActivity"
             android:label="@string/title_activity_agregar" >
         </activity>
+        <activity
+            android:name=".EditarActivity"
+            android:label="@string/title_activity_editar" >
+        </activity>
     </application>
 
 </manifest>
